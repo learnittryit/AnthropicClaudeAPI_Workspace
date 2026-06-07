@@ -1,0 +1,8 @@
+1. Goal is to generate an output in Python Code , JSON or text
+2. prompt --> dataset
+Either write a dataset or ask claude to generate for us e.g 
+[
+    {"task":"prompt 1 "},
+    {"task":"prompt 2 "},
+    {"task":"prompt 3 "},
+]

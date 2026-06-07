@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that extracts the AWS region from an S3 bucket ARN. The function should take an ARN string like 'arn:aws:s3:::my-bucket-us-west-2' and return the region code (e.g., 'us-west-2')."
+  },
+  {
+    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'company-data-bucket'. The policy should include the necessary statements for listing and getting objects."
+  },
+  {
+    "task": "Write a regex pattern that validates AWS EC2 instance IDs. The pattern should match strings that start with 'i-' followed by either 8 hexadecimal characters (older format) or 17 hexadecimal characters (newer format)."
+  }
+]
