@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS region from an S3 bucket ARN. The function should take an ARN string like 'arn:aws:s3:::my-bucket-us-west-2' and return the region code (e.g., 'us-west-2')."
+    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message. The log format is: '[TIMESTAMP] [LEVEL] MESSAGE'",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly capture three groups: timestamp (ISO 8601 format), log level (DEBUG, INFO, WARN, ERROR), and the message content. It should handle multi-word messages."
   },
   {
-    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'company-data-bucket'. The policy should include the necessary statements for listing and getting objects."
+    "task": "Create a Python function that takes an AWS S3 bucket name and returns True if it follows AWS naming conventions (lowercase, 3-63 characters, no underscores), False otherwise.",
+    "format": "python",
+    "solution_criteria": "The function should validate all S3 bucket naming rules: lowercase letters/numbers/hyphens only, 3-63 characters long, no consecutive hyphens, and not formatted as an IP address. Should return a boolean."
   },
   {
-    "task": "Write a regex pattern that validates AWS EC2 instance IDs. The pattern should match strings that start with 'i-' followed by either 8 hexadecimal characters (older format) or 17 hexadecimal characters (newer format)."
+    "task": "Generate a JSON CloudFormation template snippet that defines an IAM role with assume role policy for EC2 service.",
+    "format": "json",
+    "solution_criteria": "The JSON should include proper CloudFormation syntax with AssumeRolePolicyDocument granting ec2.amazonaws.com permission, correct Version and Statement structure, and valid Effect/Principal/Action fields."
   }
 ]
